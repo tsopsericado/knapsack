@@ -26,7 +26,21 @@
       <label for="weight">weight:</label>
       <input type="number" name="weight" id="weight" placeholder="items weight" required>
       <label for="value">Price in xaf:</label>
-      <input type="number" name="" id="">
+      <input type="number" name="value" id="value" placeholder="item's price" required>
+      <button id="add" type="submit">Add Item</button>
     </form>
+    <div class="items">
+        <h3>Items:</h3>
+        <ul id="item-list"></ul>
+        <p id="full"></p>
+    </div>
+    <div class="result">
+      <h3>Result:</h3>
+      <p>Total weight: <span id="total_weight"></span></p>
+      <p>Total Price(XAF): <span id="total_value"></span></p>
+      <button class="clear">Clear</button>
+    </div>
+
+    <script src="./knapsack.js"></script>
   </body>
 </html>
