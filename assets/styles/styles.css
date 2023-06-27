@@ -69,7 +69,14 @@ li:last-child {
 }
 
 li span {
-  
+  margin-left:auto; 
+}
+
+.clear-all:hover {
+  background-color:red;
+  color:white;
+  cursor:pointer;
+  transition:0.2s ease-in-out;
 }
 
 
