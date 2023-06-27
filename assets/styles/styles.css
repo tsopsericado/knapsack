@@ -1,0 +1,89 @@
+.container {
+    border:1px solid #ccc;
+    padding: 15px;
+    margin: auto;
+    max-width:500px;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+  border: 2px solid #c4dde6;
+  width:100%;
+}
+
+label,
+input,
+button {
+  margin: 2px;
+  padding: 4px;
+}
+
+button{
+  display: inline-block;
+  text-align:center;
+  text-decoratiom:none;
+  font-size:16px;
+  cursor:pointer;
+  background-color:#4caf50;
+  color:white;
+  border:none;
+  padding:10px 20px;
+}
+
+.items{
+  margin-top:20px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.delete {
+    display: inline-block;
+  text-align:center;
+  text-decoratiom:none;
+  font-size:16px;
+  cursor:pointer;
+  background-color:#4caf50;
+  color:white;
+  border:none;
+  padding:10px 20px;
+}
+
+ul{
+  padding:0;
+  list-style:none;
+}
+
+li {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-button:1px solid #ccc;
+  padding:10px;
+}
+
+li:last-child {
+  border-buttom:none;
+}
+
+li span {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,8 +2,8 @@ const itemList = document.querySelector('#item_list')
 const form = document.querySelector('form')
 const totalWeight = document.querySelector('#total_weigth')
 const totalValue = document.querySelector('#total_value')
-const MaxWeigh = document.querySelector('#max_weight')
-const delele = document.querySelector('.delete')
+const maxWeight = document.querySelector('#max_weight')
+const clearAllBtn = document.querySelector(".clear-all");
 const Add = document.querySelector('#add')
 const itemInput = document.querySelector('#item')
 const weightInput =document.querySelector('#weight')
@@ -63,8 +63,12 @@ function calculateResult () {
     itemList.appendChild(li)
     totalWeight.textContent = totalWeightValue
     totalValue.textContent = totalValueValue
-    MaxWeight.textContent = MaxWeigh
+    maxWeight.textContent = MaxWeigh;
    }
+}
+
+clearAllBtn.onclick = function reset() {
+  window.location.reload()
 }
 
 clearAllBtn.addEvenListener('click', () =>{
