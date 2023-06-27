@@ -12,8 +12,8 @@
       <input
         type="number"
         id="number"
-        name="max_weight"
-        placeholder="max_weight"
+        name="maxi_weight"
+        placeholder="max weight"
       />
       <label for="item">Item:</label>
       <input
@@ -31,14 +31,16 @@
     </form>
     <div class="items">
         <h3>Items:</h3>
-        <ul id="item-list"></ul>
+        <ul id="item_list"></ul>
         <p id="full"></p>
     </div>
     <div class="result">
       <h3>Result:</h3>
       <p>Total weight: <span id="total_weight"></span></p>
       <p>Total Price(XAF): <span id="total_value"></span></p>
-      <button class="clear">Clear</button>
+      <p>Max weight: <span id="max_weight"></span></p>
+      <p id="error"></p>
+      <button class="delete">Clear</button>
     </div>
 
     <script src="./knapsack.js"></script>
