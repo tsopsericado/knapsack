@@ -3,47 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <title>Knapsack</title>
   </head>
   <body>
     <div class="container">
-    <h2>Knapsack</h2>
-    <form>
-      <label for="item">input max-weight:</label>
-      <input
-        type="number"
-        id="number"
-        name="maxi_weight"
-        placeholder="max weight"
-      />
-      <label for="item">Item:</label>
-      <input
-        type="text"
-        id="item"
-        name="item"
-        placeholder="enter the item"
-        required
-      />
-      <label for="weight">weight:</label>
-      <input type="number" name="weight" id="weight" placeholder="items weight" required>
-      <label for="value">Price in xaf:</label>
-      <input type="number" name="value" id="value" placeholder="item's price" required>
-      <button id="add" type="submit">Add Item</button>
-    </form>
-    <div class="items">
+      <h2>Knapsack</h2>
+      <form>
+        <label for="item">input max-weight:</label>
+        <input
+          type="number"
+          id="maxi_weight"
+          name="item"
+          placeholder="max weight"
+        />
+        <label for="item">Item:</label>
+        <input
+          type="text"
+          id="item"
+          name="item"
+          placeholder="enter the item"
+          required
+        />
+        <label for="weight">weight:</label>
+        <input
+          type="number"
+          name="weight"
+          id="weight"
+          placeholder="items weight"
+          required
+        />
+        <label for="value">Price in xaf:</label>
+        <input
+          type="number"
+          name="value"
+          id="value"
+          placeholder="item's price"
+          required
+        />
+        <button id="add" type="submit">Add Item</button>
+      </form>
+      <div class="items">
         <h3>Items:</h3>
         <ul id="item_list"></ul>
         <p id="full"></p>
-    </div>
-    <div class="result">
-      <h3>Result:</h3>
-      <p>Total weight: <span id="total_weight"></span></p>
-      <p>Total Price(XAF): <span id="total_value"></span></p>
-      <p>Max weight: <span id="max_weight"></span></p>
-      <p id="error"></p>
       </div>
-      <button class="delete">Clear</button>
+      <div class="result">
+        <h3>Result:</h3>
+        <p>Total weight: <span id="total_weight"></span></p>
+        <p>Total Price(XAF): <span id="total_value"></span></p>
+        <p>Max weight: <span id="max_weight"></span></p>
+        <p id="error"></p>
+      </div>
+      <button class="Clear-all">Clear</button>
     </div>
 
     <script src="./knapsack.js"></script>

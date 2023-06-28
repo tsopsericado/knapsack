@@ -1,8 +1,12 @@
+body{
+  background-color:lightblue;
+}
 .container {
     border:1px solid #ccc;
     padding: 15px;
     margin: auto;
-    max-width:500px;
+    max-width:400px;
+    background-color: rgba(0, 0, 0, 35%)
 }
 
 form {
@@ -40,7 +44,7 @@ button{
 }
 
 .delete {
-    display: inline-block;
+  display: inline-block;
   text-align:center;
   text-decoratiom:none;
   font-size:16px;
